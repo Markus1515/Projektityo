@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import MyCounter from './mycounter';
+import { Otsikko } from './sivu';
+import { Page } from './page';
+import { PowerBI } from './visualisoinnit';
+import { Visual } from './visualisoinnit2';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Page />} />
+        <Route path="/sivu" element={<Otsikko />} />
+        <Route path='visualisoinnit' element={<PowerBI />} />
+        <Route path='visualisoinnit2' element={<Visual />}/>
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
