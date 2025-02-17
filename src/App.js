@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+/*import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Page from './page';
 
 function App() {
@@ -13,3 +13,4 @@ function App() {
 
 export default App;
 
+*/
