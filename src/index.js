@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import MyCounter from './mycounter';
 import { Otsikko } from './sivu';
 import { Page } from './page';
 import { PowerBI } from './visualisoinnit';
