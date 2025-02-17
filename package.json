@@ -1,4 +1,9 @@
 {
+  "homepage": "https://Markus1515.github.io/Projektityo",
+"repository": {
+  "type": "git",
+  "url": "https://github.com/Markus1515/Projektityo.git"
+},
   "name": "testi",
   "version": "0.1.0",
   "private": true,
