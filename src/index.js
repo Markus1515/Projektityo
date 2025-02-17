@@ -6,8 +6,7 @@ import { Page } from './page';
 import { PowerBI } from './visualisoinnit';
 import { Visual } from './visualisoinnit2';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,12 +15,15 @@ root.render(
       <Routes>
         <Route path="/" element={<Page />} />
         <Route path="/sivu" element={<Otsikko />} />
-        <Route path='visualisoinnit' element={<PowerBI />} />
-        <Route path='visualisoinnit2' element={<Visual />}/>
+        <Route path="/visualisoinnit" element={<PowerBI />} />
+        <Route path="/visualisoinnit2" element={<Visual />} />
       </Routes>
     </Router>
   </React.StrictMode>
 );
+
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
